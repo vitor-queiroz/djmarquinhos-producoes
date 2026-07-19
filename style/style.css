@@ -75,9 +75,9 @@ nav a{
 nav a:hover{
     color:#8B5CF6;
 }
-/*==========================
-    INÍCIO
-==========================*/
+
+
+
 
 #inicio{
     min-height:100vh;
@@ -225,7 +225,7 @@ nav a:hover{
 
 
 #numeros{
-    padding:120px 0;
+    padding:100px 0 40px;
 }
 
 .timeline-container{
@@ -347,13 +347,6 @@ nav a:hover{
 
 
 
-.hits-historicos{
-    width:min(1200px,90%);
-    margin:120px auto;
-    position: relative;
-    width: 80px 0;
-}
-
 .hits-historicos > h2{
     text-align:center;
     font-family:'Poppins';
@@ -364,7 +357,9 @@ nav a:hover{
 
 .hits-historicos{
     width: 100%;
-    padding: 100px 0;
+    margin: 40px auto;
+    padding: 80px 0;
+    position: relative;
 
     background:radial-gradient(circle at center, rgba(117, 8, 219, 0.2), transparent 55% );
 }
@@ -468,4 +463,208 @@ nav a:hover{
 
 .info-hit .botoes{
     margin-top:10px;
+}
+
+
+/* EXPANSÃO P/ CELULAR*/
+@media(max-width:480px){
+
+
+
+    nav{
+        flex-direction:column;
+        gap:18px;
+    }
+
+
+    nav ul{
+        gap:8px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+
+    nav h2{
+        font-size:1.1rem;
+    }
+
+
+
+
+    #inicio{
+        padding-top:120px;
+    }
+
+
+    #inicio .container{
+        flex-direction:column;
+        gap:30px;
+        text-align:center;
+    }
+
+
+    .avatar img{
+        width:300px;
+    }
+
+
+    .informacoes{
+        align-items:center;
+        transform:none;
+    }
+
+
+    .informacoes h1{
+        font-size:2.0rem;
+    }
+
+
+
+
+    .novo-lancamento{
+        width:85%;
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+        padding:25px;
+    }
+
+
+    .dados-lancamento{
+        align-items:center;
+    }
+
+
+    .novo-lancamento p{
+        max-width:85%;
+    }
+
+
+
+
+    #numeros{
+        padding:80px 0;
+    }
+
+
+    .timeline-container{
+        width:95%;
+    }
+
+
+    .linha{
+        left:20px;
+    }
+
+
+    .musica-destaque,
+    .esquerda,
+    .direita{
+        width:90%;
+        left:0;
+        padding-left:60px;
+        padding-right:0;
+    }
+
+
+    .esquerda .ponto,
+    .direita .ponto{
+        left:11px;
+        right:auto;
+    }
+
+
+
+    .card-musica{
+        width:100%;
+        flex-direction:column;
+        text-align:center;
+        padding:17px;
+    }
+
+
+    .card-musica img{
+        width:150px;
+        height:150px;
+    }
+
+
+    .info-musica{
+        align-items:center;
+    }
+
+
+
+    .hits-historicos{
+        padding: 40px 10px;
+        margin: 20px auto;
+    }
+
+    .hits-historicos > h2{
+        font-size:1.8rem;
+        margin-bottom:30px;
+}
+
+
+    .cards-hits{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+
+    .card-hit{
+        width: 100%;
+        min-height: 250px;
+        padding: 18px 12px;
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+
+        border-radius: 20px;
+        background: rgba(20,20,20,85);
+        transition: .3s;
+    }
+
+    .card-hit:hover{
+        transform: translateY(-5px);
+    }
+
+    .card-hit img{
+        width: 90px;
+        height: 90px;
+        border-radius: 12px;
+    }
+
+
+    .info-hit{
+        align-items:center;
+        gap: 10px;
+    }
+
+    .info-hit h3{
+        font-size:1.1rem;
+        line-height: 1.2;
+    }
+
+
+    .info-hit p{
+        font-size:.8rem;
+        line-height:18px;
+    }
+
+
+    .card-hit .botoes{
+        flex-direction:row;
+        gap:8px;
+    }
+
+
+    .card-hit .spotify,
+    .card-hit .youtube{
+        font-size: .75rem;
+        padding:9px 5px;
+    }
+
+
 }
