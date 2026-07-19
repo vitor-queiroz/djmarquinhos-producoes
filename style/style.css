@@ -1,0 +1,222 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#090909;
+    color:#fff;
+    font-family:'Inter',sans-serif;
+    background:
+    radial-gradient(circle at 20% 20%, rgba(98, 0, 255, 0.15), transparent 35%),
+    radial-gradient(circle at 80% 50%, rgba(6, 87, 53, 0.12), transparent 40%),
+    #090909;
+}
+
+img{
+    display:block;
+    max-width:100%;
+}
+
+a{
+    text-decoration:none;
+}
+
+.container{
+    width:min(1200px,90%);
+    margin:auto;
+}
+
+
+
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:1000;
+    background:rgba(9,9,9,.75);
+    backdrop-filter:blur(15px);
+    border-bottom:1px solid rgba(255,255,255,.05);
+}
+
+nav{
+    width:min(1200px,90%);
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:22px 0;
+}
+
+nav h2{
+    font-family:'Poppins',sans-serif;
+    font-size:1.5rem;
+}
+
+nav ul{
+    display:flex;
+    gap:35px;
+    list-style:none;
+}
+
+nav a{
+    color:white;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#8B5CF6;
+}
+/*==========================
+    INÍCIO
+==========================*/
+
+#inicio{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+}
+
+#inicio .container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:70px;
+}
+
+.avatar{
+   position: relative;
+   left:0px;
+}
+
+.avatar img{
+    width:650px;
+    max-width:none;
+    filter:drop-shadow(0 0 45px rgba(139,92,246,.35));
+}
+
+
+.informacoes{
+    display:flex;
+    flex-direction:column;
+    align-items: flex-start;
+    transform: translateY(-20px);
+}
+
+.cargo{
+    color:#8B5CF6;
+    letter-spacing:2px;
+    font-weight:600;
+}
+
+.informacoes h1{
+    font-family:'Poppins',sans-serif;
+    font-size:3.8rem;
+    line-height: 1.1;
+    max-width: 700px;
+    margin:15px 0;
+}
+
+.descricao{
+    color:#C5C5C5;
+    line-height:30px;
+    margin-bottom:40px;
+}
+
+
+
+.novo-lancamento{
+    width:620px;
+    background:#141414;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    padding:30px;
+    display:flex;
+    align-items:flex-start;
+    gap:30px;
+}
+
+.capa-area{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:12px;
+}
+
+.tag{
+    color:#8B5CF6;
+    font-size: .85rem;
+    font-weight:700;
+    text-align: center;
+}
+
+.dados-lancamento{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    gap:15px;
+}
+
+
+.novo-lancamento h2{
+    margin:0;
+    font-family:'Poppins';
+    font-size:2rem;
+}
+
+.novo-lancamento p{
+    color:#bdbdbd;
+    line-height:26px;
+    max-width:280px;
+}
+
+.capa-musica{
+    width:180px;
+}
+
+.capa-musica img{
+    width:180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius:14px;
+}
+
+
+
+.botoes{
+    width: 100%;
+    display:flex;
+    gap:15px;
+    margin-top:8px;
+}
+
+.spotify,
+.youtube{
+    padding:14px 28px;
+    border-radius:12px;
+    transition:.3s;
+    color:white;
+    flex:1 ;
+    text-align: center;
+}
+
+.spotify{
+    background:#1DB954;
+}
+
+.youtube{
+    background:#FF0000;
+}
+
+.spotify:hover,
+.youtube:hover{
+    transform:translateY(-5px);
+}
